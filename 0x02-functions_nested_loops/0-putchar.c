@@ -1,6 +1,7 @@
 #include"main.h"
 /**
-* main - print _putchar ft_pustr
+* main - print _putchar ft_putstr
+* str is string
 * is written by mbah
 * Return: 0
 */
