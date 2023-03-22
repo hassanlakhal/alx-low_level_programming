@@ -5,6 +5,12 @@
 * is written by mbah
 * Return: 0
 */
+/**
+* _putstr - writes the string str to stdout
+* @str: The string to print
+*
+* Return: void.
+*/
 void	ft_putstr(char *str)
 {
 	int i;
@@ -12,7 +18,7 @@ void	ft_putstr(char *str)
 	i = 0;
 	while (str[i])
 	{
-	_putchar(str[i]);
+		_putchar(str[i]);
 		i++;
 	}
 }
