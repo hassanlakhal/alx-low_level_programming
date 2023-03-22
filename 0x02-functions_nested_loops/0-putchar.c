@@ -6,10 +6,12 @@
 * Return: 0
 */
 /**
-* ft_putstr - writes the string
-* @str: The string to print
+* ft_putstr - writes a string to standard output
+* @str: the string to be written
 *
-* Return: void.
+* This function writes the string pointed to by 'str' to the standard output stream.
+* If the string contains null characters, the output will be truncated at the first null
+* character encountered. There is no return value.
 */
 void	ft_putstr(char *str)
 {
