@@ -6,7 +6,7 @@
 * Return: 0
 */
 /**
-* ft_putstr - writes the string str to stdout
+* ft_putstr - writes the string
 * @str: The string to print
 *
 * Return: void.
