@@ -5,20 +5,20 @@
 * is written by mbah
 * Return: 0
 */
-void    ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (str[i])
-    {
-        _putchar(str[i]);
-        i++;
-    }
+	i = 0;
+	while (str[i])
+	{
+	_putchar(str[i]);
+		i++;
+	}
 }
 
 int main(void)
 {
-    ft_putstr("_putchar\n");
-    return (0);
+	ft_putstr("_putchar\n");
+	return (0);
 }
