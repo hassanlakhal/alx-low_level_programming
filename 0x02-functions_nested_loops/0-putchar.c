@@ -10,8 +10,12 @@ void ft_putstr(char *str)
 
     i = 0;
     while (str[i])
-        _putchar(str[i++]);
+    {
+        _putchar(str[i]);
+        i++;
+    }
 }
+
 int main(void)
 {
     ft_putstr("_putchar\n");
