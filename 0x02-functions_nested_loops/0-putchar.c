@@ -1,10 +1,10 @@
 #include"main.h"
 /**
-* main - print _putchar
+* main - print _putchar ft_pustr
 * is written by mbah
 * Return: 0
 */
-void ft_putstr(char *str)
+void    ft_putstr(char *str)
 {
     int i;
 
