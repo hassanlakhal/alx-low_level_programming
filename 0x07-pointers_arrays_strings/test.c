@@ -1,21 +1,38 @@
-#include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
+/*#include "main.h"*/
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+* main - multiply 2 numbers as arguments
+* @argc: number of arguments
+* @argv: arguments
+* Return: 0 success
+*/
+int main(int argc, char *argv[])
 {
-
-    char *f;
-
-    f = _strchr("First, solve the problem. Then, write the code.", '\0');
-
-    if (f != NULL)
-    {
-        printf("-%s\n", f);
-    }
-    return (0);
+	unsigned long res;
+	int i, j;
+	char NULL;
+	i = 1;
+	if (argc < 3)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	while (i < argc)
+	{
+		j = 0;
+		while (argv[i][j])
+		{
+			if (argv[i][j] > 57 || argv[i][j] < 48)
+			{
+				printf("Error\n");
+				exit(98);
+			}
+			j++;
+		}
+		i++;
+	}
+	res = atol(argv[1]) *  atol(argv[2]);
+	printf("%lu\n", res);
+	return (0);
 }
